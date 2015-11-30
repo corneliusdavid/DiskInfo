@@ -14,11 +14,11 @@ type
 implementation
 
 uses
-  DiskInfoLib;
+  DiskInfoLibrary;
 
 class method ConsoleApp.Main(args: array of String);
 var
-  di: DiskInfo := new DiskInfo;
+  di: DiskInfoLib := new DiskInfoLib;
 begin
   Console.WriteLine('DiskInfo tests...');
   Console.WriteLine;

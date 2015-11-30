@@ -83,11 +83,11 @@
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\DiskInfo\DiskInfo.oxygene">
-      <Name>DiskInfo</Name>
+    <ProjectReference Include="..\DiskInfoLib\DiskInfoLibrary.oxygene">
+      <Name>DiskInfoLibrary</Name>
       <Project>{ea8ba804-fce9-4c91-adb7-71f8e2dd4d9d}</Project>
       <Private>True</Private>
-      <HintPath>..\bin\Debug\DiskInfo.dll</HintPath>
+      <HintPath>..\DiskInfoLib\bin\Debug\DiskInfo.dll</HintPath>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\RemObjects Software\Oxygene\RemObjects.Oxygene.Echoes.targets" />
