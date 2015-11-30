@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default" name="DiskInfo at DCI" resourceRoot="" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" id="f7ef73f8-fcc8-456c-b6e1-35107902c60d" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="DiskInfoService" type="wsdl" bindingName="{http://tempuri.org/}DiskInfoServiceBinding" soapVersion="1_1" anonymous="optional" definition="http://173.248.153.144:8099/soap" id="c9084d8d-1543-4417-b148-a4c0fe7527b1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://173.248.153.144:8099/soap"><con:part><con:url>http://173.248.153.144:8099/soap</con:url><con:content><![CDATA[<wsdl:definitions name="DiskInfoServiceLib" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/">
+  <wsdl:types>
+    <xs:schema targetNamespace="http://tempuri.org/" elementFormDefault="qualified">
+      <xs:element name="DiskInfoService___GetServerTime">
+        <xs:complexType/>
+      </xs:element>
+      <xs:element name="DiskInfoService___GetServerTimeResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Result" type="xs:dateTime"></xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DiskInfoService___CurrentDiskName">
+        <xs:complexType/>
+      </xs:element>
+      <xs:element name="DiskInfoService___CurrentDiskNameResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Result" type="xs:string"></xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DiskInfoService___VolumeName">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="DiskName" type="xs:string"></xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DiskInfoService___VolumeNameResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Result" type="xs:string"></xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DiskInfoService___DiskType">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="DiskName" type="xs:string"></xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DiskInfoService___DiskTypeResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Result" type="xs:string"></xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DiskInfoService___TotalDiskSize">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="DiskName" type="xs:string"></xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DiskInfoService___TotalDiskSizeResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Result" type="xs:long"></xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DiskInfoService___TotalDiskFree">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="DiskName" type="xs:string"></xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DiskInfoService___TotalDiskFreeResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Result" type="xs:long"></xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="DiskInfoService___GetServerTimeRequest">
+    <wsdl:part name="parameters" element="tns:DiskInfoService___GetServerTime"/>
+  </wsdl:message>
+  <wsdl:message name="DiskInfoService___GetServerTimeResponse">
+    <wsdl:part name="parameters" element="tns:DiskInfoService___GetServerTimeResponse"/>
+  </wsdl:message>
+  <wsdl:message name="DiskInfoService___CurrentDiskNameRequest">
+    <wsdl:part name="parameters" element="tns:DiskInfoService___CurrentDiskName"/>
+  </wsdl:message>
+  <wsdl:message name="DiskInfoService___CurrentDiskNameResponse">
+    <wsdl:part name="parameters" element="tns:DiskInfoService___CurrentDiskNameResponse"/>
+  </wsdl:message>
+  <wsdl:message name="DiskInfoService___VolumeNameRequest">
+    <wsdl:part name="parameters" element="tns:DiskInfoService___VolumeName"/>
+  </wsdl:message>
+  <wsdl:message name="DiskInfoService___VolumeNameResponse">
+    <wsdl:part name="parameters" element="tns:DiskInfoService___VolumeNameResponse"/>
+  </wsdl:message>
+  <wsdl:message name="DiskInfoService___DiskTypeRequest">
+    <wsdl:part name="parameters" element="tns:DiskInfoService___DiskType"/>
+  </wsdl:message>
+  <wsdl:message name="DiskInfoService___DiskTypeResponse">
+    <wsdl:part name="parameters" element="tns:DiskInfoService___DiskTypeResponse"/>
+  </wsdl:message>
+  <wsdl:message name="DiskInfoService___TotalDiskSizeRequest">
+    <wsdl:part name="parameters" element="tns:DiskInfoService___TotalDiskSize"/>
+  </wsdl:message>
+  <wsdl:message name="DiskInfoService___TotalDiskSizeResponse">
+    <wsdl:part name="parameters" element="tns:DiskInfoService___TotalDiskSizeResponse"/>
+  </wsdl:message>
+  <wsdl:message name="DiskInfoService___TotalDiskFreeRequest">
+    <wsdl:part name="parameters" element="tns:DiskInfoService___TotalDiskFree"/>
+  </wsdl:message>
+  <wsdl:message name="DiskInfoService___TotalDiskFreeResponse">
+    <wsdl:part name="parameters" element="tns:DiskInfoService___TotalDiskFreeResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="DiskInfoService">
+    <wsdl:operation name="GetServerTime">
+      <wsdl:documentation/>
+      <wsdl:input message="tns:DiskInfoService___GetServerTimeRequest"/>
+      <wsdl:output message="tns:DiskInfoService___GetServerTimeResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="CurrentDiskName">
+      <wsdl:documentation/>
+      <wsdl:input message="tns:DiskInfoService___CurrentDiskNameRequest"/>
+      <wsdl:output message="tns:DiskInfoService___CurrentDiskNameResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="VolumeName">
+      <wsdl:documentation/>
+      <wsdl:input message="tns:DiskInfoService___VolumeNameRequest"/>
+      <wsdl:output message="tns:DiskInfoService___VolumeNameResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="DiskType">
+      <wsdl:documentation/>
+      <wsdl:input message="tns:DiskInfoService___DiskTypeRequest"/>
+      <wsdl:output message="tns:DiskInfoService___DiskTypeResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="TotalDiskSize">
+      <wsdl:documentation/>
+      <wsdl:input message="tns:DiskInfoService___TotalDiskSizeRequest"/>
+      <wsdl:output message="tns:DiskInfoService___TotalDiskSizeResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="TotalDiskFree">
+      <wsdl:documentation/>
+      <wsdl:input message="tns:DiskInfoService___TotalDiskFreeRequest"/>
+      <wsdl:output message="tns:DiskInfoService___TotalDiskFreeResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DiskInfoServiceBinding" type="tns:DiskInfoService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetServerTime">
+      <soap:operation soapAction="urn:DiskInfoServiceLib-DiskInfoService#GetServerTime" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CurrentDiskName">
+      <soap:operation soapAction="urn:DiskInfoServiceLib-DiskInfoService#CurrentDiskName" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VolumeName">
+      <soap:operation soapAction="urn:DiskInfoServiceLib-DiskInfoService#VolumeName" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DiskType">
+      <soap:operation soapAction="urn:DiskInfoServiceLib-DiskInfoService#DiskType" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TotalDiskSize">
+      <soap:operation soapAction="urn:DiskInfoServiceLib-DiskInfoService#TotalDiskSize" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TotalDiskFree">
+      <soap:operation soapAction="urn:DiskInfoServiceLib-DiskInfoService#TotalDiskFree" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DiskInfoServiceService">
+    <wsdl:port name="DiskInfoServicePort" binding="tns:DiskInfoServiceBinding">
+      <soap:address location="?service=DiskInfoService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>?service=DiskInfoService</con:endpoint><con:endpoint>http://173.248.153.144:8099/soap?service=DiskInfoService</con:endpoint></con:endpoints><con:operation isOneWay="false" action="urn:DiskInfoServiceLib-DiskInfoService#CurrentDiskName" name="CurrentDiskName" bindingOperationName="CurrentDiskName" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="cf2ab3fc-909d-443c-b806-3e1d00ba6bc9"><con:settings/><con:call name="Request 1" id="b9187fa7-fbf6-4a63-a443-c218af556dc3"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://173.248.153.144:8099/soap?service=DiskInfoService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:DiskInfoService___CurrentDiskName/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:DiskInfoServiceLib-DiskInfoService#CurrentDiskName"/><con:wsrmConfig version="1.2"/></con:call><con:call id="c7acb92e-7608-4898-b160-d0b56b2ed11c" name="current disk name"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>?service=DiskInfoService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:DiskInfoService___CurrentDiskName/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:DiskInfoServiceLib-DiskInfoService#CurrentDiskName"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="urn:DiskInfoServiceLib-DiskInfoService#DiskType" name="DiskType" bindingOperationName="DiskType" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="74bce2d2-34d3-4610-b338-371f1406a80c"><con:settings/><con:call name="Request 1" id="51f68881-e343-44f2-9eca-014de65c70ce"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://173.248.153.144:8099/soap?service=DiskInfoService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:DiskInfoService___DiskType>
+         <tem:DiskName>C:\</tem:DiskName>
+      </tem:DiskInfoService___DiskType>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:DiskInfoServiceLib-DiskInfoService#DiskType"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="urn:DiskInfoServiceLib-DiskInfoService#GetServerTime" name="GetServerTime" bindingOperationName="GetServerTime" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="147ea054-5d59-4bfb-8004-53c21b900fe6"><con:settings/><con:call name="Request 1" id="bbcf83a7-bb6f-4dee-85c5-a10aa0f3a2a1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://173.248.153.144:8099/soap?service=DiskInfoService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:DiskInfoService___GetServerTime/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:DiskInfoServiceLib-DiskInfoService#GetServerTime"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="urn:DiskInfoServiceLib-DiskInfoService#TotalDiskFree" name="TotalDiskFree" bindingOperationName="TotalDiskFree" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="11dbdeaf-cd65-4569-823e-d47d6d83bf1b"><con:settings/><con:call name="Request 1" id="41a7c53b-25c6-4622-bd1f-48237b27e2fa"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://173.248.153.144:8099/soap?service=DiskInfoService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:DiskInfoService___TotalDiskFree>
+         <tem:DiskName>C:\</tem:DiskName>
+      </tem:DiskInfoService___TotalDiskFree>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:DiskInfoServiceLib-DiskInfoService#TotalDiskFree"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="urn:DiskInfoServiceLib-DiskInfoService#TotalDiskSize" name="TotalDiskSize" bindingOperationName="TotalDiskSize" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="0b03d2b5-b7ad-42ec-96a8-c0e44377f350"><con:settings/><con:call name="Request 1" id="bb3e4ec9-4aca-4907-81e1-2d2244d671d6"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://173.248.153.144:8099/soap?service=DiskInfoService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:DiskInfoService___TotalDiskSize>
+         <tem:DiskName>C:\</tem:DiskName>
+      </tem:DiskInfoService___TotalDiskSize>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:DiskInfoServiceLib-DiskInfoService#TotalDiskSize"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="urn:DiskInfoServiceLib-DiskInfoService#VolumeName" name="VolumeName" bindingOperationName="VolumeName" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="d35e2bde-00b5-4fe3-8b87-558d5a08b28c"><con:settings/><con:call name="Request 1" id="0ef123eb-4464-4850-8dc2-72df6b607ff2"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://173.248.153.144:8099/soap?service=DiskInfoService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:DiskInfoService___VolumeName>
+         <tem:DiskName>C:\</tem:DiskName>
+      </tem:DiskInfoService___VolumeName>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:DiskInfoServiceLib-DiskInfoService#VolumeName"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
