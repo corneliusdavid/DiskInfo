@@ -2,10 +2,10 @@
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
     <ProductVersion>3.5</ProductVersion>
-    <RootNamespace>TestDiskInfoConsole</RootNamespace>
-    <ProjectGuid>{de63202a-825e-4e02-ac62-dfb7168aad56}</ProjectGuid>
+    <RootNamespace>DiskInfoLibConsoleTest</RootNamespace>
+    <ProjectGuid>{43aef248-baeb-4581-b331-dd14b6ab1b21}</ProjectGuid>
     <OutputType>exe</OutputType>
-    <AssemblyName>TestDiskInfoConsole</AssemblyName>
+    <AssemblyName>DiskInfoLibConsoleTest</AssemblyName>
     <AllowGlobals>False</AllowGlobals>
     <AllowLegacyWith>False</AllowLegacyWith>
     <AllowLegacyOutParams>False</AllowLegacyOutParams>
@@ -14,19 +14,16 @@
     <ApplicationIcon>Properties\App.ico</ApplicationIcon>
     <Configuration Condition="'$(Configuration)' == ''">Release</Configuration>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <Name>TestDiskInfoConsole</Name>
+    <Name>DiskInfoLibConsoleTest</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <Optimize>false</Optimize>
-    <OutputPath>.\bin\Debug</OutputPath>
+    <Optimize>False</Optimize>
+    <OutputPath>..\..\..\bin</OutputPath>
     <DefineConstants>DEBUG;TRACE;</DefineConstants>
     <GeneratePDB>True</GeneratePDB>
     <GenerateMDB>True</GenerateMDB>
-    <EnableAsserts>True</EnableAsserts>
-    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
     <CaptureConsoleOutput>False</CaptureConsoleOutput>
     <StartMode>Project</StartMode>
-    <RegisterForComInterop>False</RegisterForComInterop>
     <CpuType>anycpu</CpuType>
     <RuntimeVersion>v25</RuntimeVersion>
     <XmlDoc>False</XmlDoc>
@@ -54,15 +51,7 @@
   <ItemGroup>
     <Reference Include="mscorlib" />
     <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
     <Reference Include="System.Core">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="System.Xml.Linq">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="System.Data.DataSetExtensions">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
   </ItemGroup>
@@ -87,7 +76,7 @@
       <Name>DiskInfo</Name>
       <Project>{ea8ba804-fce9-4c91-adb7-71f8e2dd4d9d}</Project>
       <Private>True</Private>
-      <HintPath>..\bin\Release\DiskInfo.dll</HintPath>
+      <HintPath>..\bin\Debug\DiskInfo.dll</HintPath>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\RemObjects Software\Elements\RemObjects.Elements.Echoes.targets" />

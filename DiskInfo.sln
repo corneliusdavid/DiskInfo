@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "DiskInfo", "DiskInfo.oxygene", "{EA8BA804-FCE9-4C91-ADB7-71F8E2DD4D9D}"
+EndProject
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "TestDiskInfoConsole", "TestDiskInfoConsole\TestDiskInfoConsole.oxygene", "{DE63202A-825E-4E02-AC62-DFB7168AAD56}"
+EndProject
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "DiskInfoLibConsoleTest", "DiskInfoLibConsoleTest\DiskInfoLibConsoleTest.oxygene", "{43AEF248-BAEB-4581-B331-DD14B6AB1B21}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA8BA804-FCE9-4C91-ADB7-71F8E2DD4D9D}.Debug|Default.ActiveCfg = Debug
+		{EA8BA804-FCE9-4C91-ADB7-71F8E2DD4D9D}.Debug|Default.Build.0 = Debug
+		{EA8BA804-FCE9-4C91-ADB7-71F8E2DD4D9D}.Release|Default.ActiveCfg = Release
+		{EA8BA804-FCE9-4C91-ADB7-71F8E2DD4D9D}.Release|Default.Build.0 = Release
+		{DE63202A-825E-4E02-AC62-DFB7168AAD56}.Debug|Default.ActiveCfg = Debug
+		{DE63202A-825E-4E02-AC62-DFB7168AAD56}.Debug|Default.Build.0 = Debug
+		{DE63202A-825E-4E02-AC62-DFB7168AAD56}.Release|Default.ActiveCfg = Release
+		{DE63202A-825E-4E02-AC62-DFB7168AAD56}.Release|Default.Build.0 = Release
+		{43AEF248-BAEB-4581-B331-DD14B6AB1B21}.Debug|Default.ActiveCfg = Debug
+		{43AEF248-BAEB-4581-B331-DD14B6AB1B21}.Debug|Default.Build.0 = Debug
+		{43AEF248-BAEB-4581-B331-DD14B6AB1B21}.Release|Default.ActiveCfg = Release
+		{43AEF248-BAEB-4581-B331-DD14B6AB1B21}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
